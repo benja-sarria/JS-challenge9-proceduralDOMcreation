@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.index-body {
+  border: rgba(0, 140, 255, 0.404) 5px solid;
+  border-radius: 2em;
+  min-height: 95vh;
+  margin: 1em 2em 1em;
+  box-shadow: 0px 0px 150px 80px rgba(16, 157, 251, 0.438);
+}
+.index-body h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin: 1em auto 2em;
+  color: rgba(0, 99, 180, 0.822);
+}
+.index-body .grids-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index-body .grids-container .show-btn {
+  border-radius: 0.5em;
+  min-width: 15em;
+  max-width: 15em;
+  min-height: 3em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  margin: 1em 0 2em;
+  color: white;
+  border: 1px solid rgba(0, 140, 255, 0.404);
+  background-image: linear-gradient(158deg, rgba(0, 140, 255, 0.746), rgba(67, 211, 255, 0.712));
+}
+.index-body .grids-container .hidden-grids {
+  display: none;
+}
+.index-body .grids-container .grids {
+  border-radius: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  row-gap: 1em;
+  column-gap: 1em;
+  width: 90vw;
+  height: 150vh;
+  background-color: rgba(0, 25, 36, 0.822);
+  background-image: linear-gradient(155deg, rgba(0, 98, 255, 0.349), rgba(0, 98, 255, 0.349), rgba(145, 255, 246, 0.404), rgba(0, 195, 255, 0.472), rgba(0, 5, 53, 0.794));
+  padding: 1em;
+  margin: 3em auto 0;
+}
+.index-body .grids-container .grids .image1 {
+  border: 0.15em solid rgba(57, 96, 133, 0.109);
+  border-radius: 1em;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+.index-body .grids-container .grids .image1 .img-painting {
+  min-width: 100%;
+}
+.index-body .grids-container .grids .image2 {
+  border: 0.15em solid rgba(57, 96, 133, 0.109);
+  border-radius: 1em;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+.index-body .grids-container .grids .image2 .img-painting {
+  min-width: 200%;
+}
+.index-body .grids-container .grids .image3 {
+  border: 0.15em solid rgba(57, 96, 133, 0.109);
+  border-radius: 1em;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+.index-body .grids-container .grids .image3 .img-painting {
+  min-width: 100%;
+}
+.index-body .grids-container .grids .image4 {
+  border: 0.15em solid rgba(57, 96, 133, 0.109);
+  border-radius: 1em;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+.index-body .grids-container .grids .image4 .img-painting {
+  position: relative;
+  right: 35em;
+  max-width: 500%;
+}
+.index-body .grids-container .grids .image5 {
+  border: 0.15em solid rgba(57, 96, 133, 0.109);
+  border-radius: 1em;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 7;
+  grid-column-end: 9;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+.index-body .grids-container .grids .image5 .img-painting {
+  max-width: 100%;
+}
+.index-body .grids-container .grids .image6 {
+  border: 0.15em solid rgba(57, 96, 133, 0.109);
+  border-radius: 1em;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  grid-column-start: 7;
+  grid-column-end: 9;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+.index-body .grids-container .grids .image6 .img-painting {
+  max-width: 350%;
+}
+.index-body .grids-container .grids .image7 {
+  border: 0.15em solid rgba(57, 96, 133, 0.109);
+  border-radius: 1em;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  grid-column-start: 7;
+  grid-column-end: 9;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+.index-body .grids-container .grids .image7 .img-painting {
+  max-width: 300%;
+}
+.index-body .grids-container .grids .image-hovered {
+  position: absolute;
+  margin: 8vh 25vw;
+  transform: scale(1);
+  z-index: 3000;
+  outline: 200em solid rgba(0, 0, 0, 0.739);
+  background-color: rgba(0, 0, 0, 0.739);
+  transition: all 300ms ease;
+  max-width: 80vw;
+}
+.index-body .grids-container .grids .image-hovered .img-painting {
+  box-shadow: 30000px 5000px 3000px 3000px rgba(0, 0, 0, 0.739);
+  width: 35vw;
+  max-width: none;
+  position: initial;
+  transition: all 300ms ease;
+}
+.index-body .grids-container .grids .image-hovered .text-painting-title {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+  max-width: 62%;
+  margin: 0 auto;
+}
+.index-body .grids-container .grids .image-hovered .text-painting {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
