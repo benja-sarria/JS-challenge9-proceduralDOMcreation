@@ -50,8 +50,8 @@
             display: grid;
             grid-template-columns: repeat(8, 1fr);
             grid-template-rows: repeat(8, 1fr);
-            row-gap: 1em;
-            column-gap: 1em;
+            row-gap: 0.15em;
+            column-gap: 0.15em;
             width: 90vw;
             height: 150vh;
             background-color: rgba(0, 25, 36, 0.822);
@@ -63,7 +63,7 @@
                 rgba(0, 195, 255, 0.472),
                 rgba(0, 5, 53, 0.794)
             );
-            padding: 1em;
+            padding: 0.3em;
             margin: 3em auto 0;
             .image1 {
                 border: 0.15em solid rgba(57, 96, 133, 0.109);
@@ -117,6 +117,7 @@
                     position: relative;
                     right: 35em;
                     max-width: 500%;
+                    width: 300%;
                 }
             }
             .image5 {
